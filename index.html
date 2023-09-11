@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Valeria M.
+          <div class="contact_info">
+            <img
+              src="html_project/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            valeriam@jeemail.com
+          </div>
+          <div style="clear: both"></div>
+          <div class="contact_info">
+            <img
+              src="html_project/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            +1702111222
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_project/face.jpg" class="profile_image" />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Valeria M.!
+          <img src="html_project/hand.png" width="60px" />
+        </h1>
+        <p>
+          I am a full stack developer with 1 year of experience in both
+          application and presentation layers. I have worked with various
+          programs such as JavaScript, Java, and Python, to name a few. I am
+          very passionate about programming, that is why I am always undergoing
+          constant professional development programms. The sky is not the limit
+          in a programmer`s life. There is always more to look/reach for.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_project/html5.png" />
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_project/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_project/CSS3.png" />
+          <h6>CSS</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_project/react.png" />
+          <h6>React</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_project/node.png" />
+          <h6>Node.js</h6>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_project/py.png" />
+          <h6>Python</h6>
+          <p>1 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Python</h3>
+          <ul>
+            <li>
+              Developed and mantained backend systems for web applications using
+              Python and Flak, resulting in enhanced performance and
+              scalability.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Javascript</h3>
+          <ul>
+            <li>
+              Developed and deployed a various project such as Meditation App,
+              eCommerce Shopping Cart, Weather App, using JS, CSS, AND HTML.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>React</h3>
+          <ul>
+            <li>Developed and mantained new user-features using React.js.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Valeria`s growth as a junior developer in one year was remarkable. She
+          continued to take initiative, seek feedback, and contribute her fresh
+          ideas. She is a promising talent.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Valeria`s progress in just a year is commendable. She stayed curious,
+          embraced challenges, and maintained her collaborative spirit. She was
+          a valuable asset to our team and I am positive she will be just as
+          valuable for other teams in the future.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Valeria was an exciting experience. She is not only
+          knowledgeable but also enthusiastic about her job and life as a whole.
+          She will make a great asset for any organization lucky enough to hire
+          her.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thank you for leaving a recommendation!x</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
